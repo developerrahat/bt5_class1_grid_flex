@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css link -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .row > div{
+      border: 1px solid #ddd;
+      background: #fffcfb;
+    }
+  </style>
+  <title>Bootstrap form & Validation & Grid</title>
+</head>
+<body>
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light primary-header">
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+        <img class="img-fluid" src="./imgs/logo.png" alt="">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-2 mb-lg-0 header-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Services <i class="fas fa-sort-down    "></i></a>
+          <ul>
+            <li><a href="#">HTML & CSS</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+            <li><a href="#">JQUERY</a></li>
+            <li><a href="#">WORDPRESS</a></li>
+            <li><a href="#">PHP & MYSQL</a></li>
+            <li><a href="#">THEME DEVELOPMENT</a></li>
+          </ul>
+          </li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- navbar end -->
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 bg-danger"><h2>This is column 6</h2></div>
+      <div class="col-lg-6 bg-primary"><h2>This is column 6</h2></div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 bg-success text-light text-center">
+          <h2>Column 12 Grid System Layout</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+
+      <div class="row  mt-3">
+        <div class="col-lg-4">Col lg 4</div>
+        <div class="col-lg-4">Col lg 4</div>
+        <div class="col-lg-4">Col lg 4</div>
+       
+      </div>
+      <div class="row  mt-3">
+        <div class="col-lg-2">Col lg 2</div>
+        <div class="col-lg-4">Col lg 4</div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-6">Nasted</div>
+            <div class="col-lg-6">Nasted</div>
+          </div>
+        </div>
+       
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-lg-3">Col lg 3</div>
+        <div class="col-lg-3">Col lg 3</div>
+        <div class="col-lg-3">Col lg 3</div>
+        <div class="col-lg-3">Col lg 3</div>
+      </div>
+      <div class="row  mt-3">
+        <div class="col-lg-2">Col lg 2</div>
+        <div class="col-lg-2">Col lg 2</div>
+        <div class="col-lg-2">Col lg 2</div>
+        <div class="col-lg-2">Col lg 2</div>
+        <div class="col-lg-2">Col lg 2</div>
+        <div class="col-lg-2">Col lg 2</div>
+        
+      </div>
+      <div class="row mt-3">
+        <div class="col-lg-1">Col lg 1</div>
+        <div class="col-lg-1">Col lg 1</div>
+        <div class="col-lg-1">Col lg 1</div>
+        <div class="col-lg-1">Col lg 1</div>
+        <div class="col-lg-1">Col lg 1</div>
+        <div class="col-lg-1">Col lg 1</div>
+        <div class="col-lg-1">Col lg 1</div>
+        <div class="col-lg-1">Col lg 1</div>
+        <div class="col-lg-1">Col lg 1</div>
+        <div class="col-lg-1">Col lg 1</div>
+        <div class="col-lg-1">Col lg 1</div>
+        <div class="col-lg-1">Col lg 1</div>
+      
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-12 bg-warning text-center text-primary"><h2>Flex System Layout</h2></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg">Flex column 5</div>
+        <div class="col-lg">Flex column 5</div>
+        <div class="col-lg">Flex column 5</div>
+        <div class="col-lg">Flex column 5</div>
+        <div class="col-lg">Flex column 5</div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg">Flex column 7</div>
+        <div class="col-lg">Flex column 7</div>
+        <div class="col-lg">Flex column 7</div>
+        <div class="col-lg">Flex column 7</div>
+        <div class="col-lg">Flex column 7</div>
+        <div class="col-lg">Flex column 7</div>
+        <div class="col-lg">Flex column 7</div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg">Flex column 8</div>
+        <div class="col-lg">Flex column 8</div>
+        <div class="col-lg">Flex column 8</div>
+        <div class="col-lg">Flex column 8</div>
+        <div class="col-lg">Flex column 8</div>
+        <div class="col-lg">Flex column 8</div>
+        <div class="col-lg">Flex column 8</div>
+        <div class="col-lg">Flex column 8</div>
+       
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg">Flex column 9</div>
+        <div class="col-lg">Flex column 9</div>
+        <div class="col-lg">Flex column 9</div>
+        <div class="col-lg">Flex column 9</div>
+        <div class="col-lg">Flex column 9</div>
+        <div class="col-lg">Flex column 9</div>
+        <div class="col-lg">Flex column 9</div>
+        <div class="col-lg">Flex column 9</div>
+        <div class="col-lg">Flex column 9</div>
+  
+       
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg">Flex column 10</div>
+        <div class="col-lg">Flex column 10</div>
+        <div class="col-lg">Flex column 10</div>
+        <div class="col-lg">Flex column 10</div>
+        <div class="col-lg">Flex column 10</div>
+        <div class="col-lg">Flex column 10</div>
+        <div class="col-lg">Flex column 10</div>
+        <div class="col-lg">Flex column 10</div>
+        <div class="col-lg">Flex column 10</div>
+        <div class="col-lg">Flex column 10</div>
+        
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg">Flex column 11</div>
+        <div class="col-lg">Flex column 11</div>
+        <div class="col-lg">Flex column 11</div>
+        <div class="col-lg">Flex column 11</div>
+        <div class="col-lg">Flex column 11</div>
+        <div class="col-lg">Flex column 11</div>
+        <div class="col-lg">Flex column 11</div>
+        <div class="col-lg">Flex column 11</div>
+        <div class="col-lg">Flex column 11</div>
+        <div class="col-lg">Flex column 11</div>
+        <div class="col-lg">Flex column 11</div>
+      
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-6 offset-3 bg-info text-center"><h2>Offset</h2></div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-4  bg-info text-center"><h2>Offset</h2></div>
+        <div class="col-lg-4 offset-4 bg-info text-center"><h2>Offset</h2></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 bg-secondary text-center"><h2>justify-content-center</h2></div>
+      </div>
+    </div>
+  </section>
+  <div class="container mt-4">
+    <div class="row mh-300 align-items-center">
+      <div class="col-lg-6 "><h2 class="text-primary">align-items-center</h2></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6 border-0 "><div class="border bg-primary">gutter</div></div>
+      <div class="col-lg-6 border-0 "><div class="border bg-secondary">gutter</div></div>
+    </div>
+  </div>
+
+  <h2 class="text-primary text-decoration-underline text-uppercase text-center my-5">Bootstrap Typography</h2>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <p class="h1">Heading one</p>
+        <h1>Heading one</h1>
+        <p class="display-1">Display 1</p>
+        <h1 class="display-2">Display 2</h1>
+        <h1 class="display-3">Display 3</h1>
+        <h1 class="display-4">Display 4</h1>
+        <h1 class="display-5">Display 5</h1>
+        <h1 class="display-6">Display 6</h1>
+      </div>
+      <p>Lorem ipsum dolor sit amet <span class="text-muted">consectetur adipisicing elit.</span> Error delectus perferendis deleniti iusto quia exercitationem, velit ratione aliquid, deserunt reiciendis eligendi voluptatem dolorum odio similique tempore ipsam iste, molestiae praesentium!</p>
+      <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, ut accusamus commodi ipsum nihil aut ullam perferendis quas laborum molestiae impedit? Autem doloribus illum animi, et repellat assumenda suscipit repudiandae.</p>
+    </div>
+  </section>
+
+  <div class="container mt-5">
+    <div class="row">
+      <figure class="text-center">
+        <blockquote class="blockquote">
+          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 border-0">
+        <div class="text-img">
+          <img  src="./imgs/meckup2.png" class="img-fluid img-thumbnail" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-2 bg-danger">Column 2</div>
+        <div class="col-lg-4 bg-primary">Column 4</div>
+        <div class="col-lg-2 bg-warning">Column 2</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-4 border-0 offset-4">
+          <div class="card text-center">
+            <img src="./imgs/meckup2.png" alt="">
+            <div class="card-header">
+              <h2>Mohammad Rahat</h2>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Developer Rahat</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptates repudiandae a.</p>
+              <a class="btn btn-primary" href="#">Load More</a>
+
+            </div>
+            <div class="card-footer text-muted">
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="card p-5">
+        <form action="#" >
+          <label for="f_name" class="form-label ">First Name</label>
+          <input type="text" id="f_name" class="form-control form_custom_style mb-4" placeholder="Type your first name">
+
+          <label for="l_name" class="form-label">Last Name</label>
+          <input type="text" id="l_name" class="form-control form_custom_style mb-4" placeholder="Type your last name">
+
+          <label for="email" class="form-label">Email Address</label>
+          <input type="text" id="email" class="form-control form_custom_style mb-4" placeholder="Type your email">
+
+          <label for="pass" class="form-label">Password</label>
+          <input type="text" id="pass" class="form-control form_custom_style mb-4" placeholder="Type your password">
+
+         
+          <div>
+            <input type="checkbox" id="check" class="form-check-input form_custom_style mb-4" >
+          <label for="check" class="form-check-label">Check out me</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <input type="reset" class="btn btn-secondary" value="Reset">
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-center text-primary mt-5">Form Validation</h2>
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-xl-3"></div>
+      <div class="col-xl-6 card p-4">
+       <form action="#">
+        <select class="form-select" id="">
+          <option selected disabled>Choosse one...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+          <option value="4">Four</option>
+          <option value="5">Five</option>
+        </select>
+
+        <div class="form-check mt-4">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Default checkbox
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+          <label class="form-check-label" for="flexCheckChecked">
+            Checked checkbox
+          </label>
+        </div>
+        <label for="range1" class="form-label">Range</label>
+        <input type="range" class="form-range" id="range1">
+       </form>
+      </div>
+      <div class="col-xl-3"></div>
+    </div>
+  </div>
+
+ <div class="container">
+   <div class="row">
+     <div class="col-xl-3"></div>
+     <div class="col-xl-6 card p-5">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="invalid-feedback">
+            Please write your first name.
+          </div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <div class="invalid-feedback">
+            Please write your last name.
+          </div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">State</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <option value="1">One</option>
+            <option value="1">One</option>
+            <option value="1">One</option>
+            <option value="1">One</option>
+            <option value="1">One</option>
+            <option value="1">One</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+          <input type="reset" class="btn btn-primary" value="Reset">
+        </div>
+      </form>
+     </div>
+     <div class="col-xl-3"></div>
+   </div>
+ </div>
+
+
+ 
+
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/custom.js"></script>
+</body>
+</html>
